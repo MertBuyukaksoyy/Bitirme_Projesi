@@ -2,7 +2,7 @@
 
 🚀 Projenin Çalıştırılması
 1. Gerekli Python Kütüphaneleri
-Aşağıdaki kütüphanelerin yüklü olduğundan emin olun:
+ Aşağıdaki kütüphanelerin yüklü olduğundan emin olun:
 
 pip install numpy pandas librosa scikit-learn keras tqdm
 
@@ -13,13 +13,14 @@ pip install numpy pandas librosa scikit-learn keras tqdm
     
 2. Dataset Hazırlığı
 
-Bu proje, MAESTRO v3.0.0 klasik müzik veri setini kullanmaktadır.
+ Bu proje, MAESTRO v3.0.0 klasik müzik veri setini kullanmaktadır.
 
-Curtis Hawthorne, Andriy Stasyuk, Adam Roberts, Ian Simon, Cheng-Zhi Anna Huang,
+  Curtis Hawthorne, Andriy Stasyuk, Adam Roberts, Ian Simon, Cheng-Zhi Anna Huang,
   Sander Dieleman, Erich Elsen, Jesse Engel, and Douglas Eck. "Enabling
   Factorized Piano Music Modeling and Generation with the MAESTRO Dataset."
   In International Conference on Learning Representations, 2019.
-    Dataseti şu klasör yapısında yerleştirin:
+
+Dataseti şu klasör yapısında yerleştirin:
 
 datasett/
 └── datasett/
@@ -30,31 +31,31 @@ Not: CSV dosyası ve ses dosyaları aynı kök klasörde olmalıdır.
 
 3. Modelin Eğitilmesi
 
-Aşağıdaki komutla kodu çalıştırabilirsiniz:
+ Aşağıdaki komutla kodu çalıştırabilirsiniz:
 
     python main.py
 
-Varsayılan olarak main() fonksiyonu çalışacak ve:
+ Varsayılan olarak main() fonksiyonu çalışacak ve:
 
-Özellik çıkarımı yapacak
+ Özellik çıkarımı yapacak
 
-Veriyi ölçekleyecek.Modeli eğitecek
+ Veriyi ölçekleyecek.Modeli eğitecek
 
-Test setinde doğruluk, classification report ve confusion matrix çıktıları verecek.Sonuçları results/ klasörüne kaydedecektir.
+ Test setinde doğruluk, classification report ve confusion matrix çıktıları verecek.Sonuçları results/ klasörüne kaydedecektir.
 
 4. Sonuç Dosyaları
 
-Kod çalıştıktan sonra şu dosyalar oluşur:
+ Kod çalıştıktan sonra şu dosyalar oluşur:
 
-results/scaler.pkl → Test sırasında kullanılacak ölçekleme nesnesi
+ results/scaler.pkl → Test sırasında kullanılacak ölçekleme nesnesi
 
-results/label_encoder.pkl → Sınıf isimlerini içeren label encoder
+ results/label_encoder.pkl → Sınıf isimlerini içeren label encoder
 
-results/best_dense_model.keras → Eğitilmiş model
+ results/best_dense_model.keras → Eğitilmiş model
 
-results/results.txt → Test doğruluğu, classification report ve confusion matrix çıktıları
+ results/results.txt → Test doğruluğu, classification report ve confusion matrix çıktıları
 
 5. Donanım Notu
 
-Bu proje düşük donanımlı cihazlarda geliştirilmiştir.
-Eğitim süresi uzun olabilir. Küçük batch size (4) ile çalışacak şekilde optimize edilmiştir.
+ Bu proje düşük donanımlı cihazlarda geliştirilmiştir.
+ Eğitim süresi uzun olabilir. Küçük batch size (4) ile çalışacak şekilde optimize edilmiştir.
