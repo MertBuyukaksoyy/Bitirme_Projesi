@@ -1,0 +1,36 @@
+Test doğruluğu: 55.67%
+                         precision    recall  f1-score   support
+
+     Alexander Scriabin       0.43      0.55      0.48        22
+         Claude Debussy       0.71      0.67      0.69        30
+     Domenico Scarlatti       0.57      0.89      0.70        18
+      Felix Mendelssohn       0.80      1.00      0.89        24
+            Franz Liszt       0.56      0.30      0.39        30
+         Franz Schubert       0.24      0.27      0.25        30
+        Frédéric Chopin       0.17      0.03      0.06        30
+  Johann Sebastian Bach       0.73      0.37      0.49        30
+        Johannes Brahms       0.62      0.50      0.56        20
+           Joseph Haydn       0.64      0.48      0.55        29
+   Ludwig van Beethoven       0.40      0.57      0.47        30
+        Robert Schumann       0.76      0.87      0.81        30
+    Sergei Rachmaninoff       0.66      0.72      0.69        29
+Wolfgang Amadeus Mozart       0.46      0.81      0.59        27
+
+               accuracy                           0.56       379
+              macro avg       0.55      0.57      0.54       379
+           weighted avg       0.55      0.56      0.53       379
+
+[[12  1  0  0  0  5  0  0  1  0  3  0  0  0]
+ [ 1 20  1  0  2  2  0  0  0  0  2  0  2  0]
+ [ 0  0 16  0  0  1  0  0  0  0  0  0  0  1]
+ [ 0  0  0 24  0  0  0  0  0  0  0  0  0  0]
+ [ 4  1  0  0  9  0  0  0  1  1  7  0  6  1]
+ [ 1  1  2  0  2  8  2  1  1  0  7  1  0  4]
+ [ 6  1  0  1  1  5  1  0  3  2  5  2  1  2]
+ [ 0  0  4  3  0  3  1 11  0  3  0  1  0  4]
+ [ 0  2  1  0  0  2  0  0 10  1  1  2  1  0]
+ [ 0  1  1  0  0  0  0  3  0 14  0  0  0 10]
+ [ 1  0  0  0  2  3  1  0  0  0 17  2  0  4]
+ [ 2  0  0  0  0  1  0  0  0  0  0 26  1  0]
+ [ 1  0  0  2  0  4  1  0  0  0  0  0 21  0]
+ [ 0  1  3  0  0  0  0  0  0  1  0  0  0 22]]
